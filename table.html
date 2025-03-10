@@ -1,71 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html Table</title>
+    <link rel="stylesheet" href="styles/style.css">
     <style>
-        table{
+        table {
             border-collapse: collapse;
         }
-        td,th{
+
+        td,
+        th {
             border: 1px solid black;
             padding: 5px 10px;
             text-align: center;
         }
-        li{
+
+        li {
             margin-bottom: 5px;
         }
     </style>
 </head>
+
 <body>
-    <h2>Html Table</h2>
-    <table>
-        <caption>Employee Table</caption>
-        <thead>
-            <th>Serial</th>
-            <th>Name</th>
-            <th>Company</th>
-            <th>Salary</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Bill Gates</td>
-                <td>Founder of Microsoft</td>
-                <td>$1000</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Steve Jobs</td>
-                <td>Founder of Apple</td>
-                <td>$1200</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Larry Page</td>
-                <td>Founder of Google</td>
-                <td rowspan="2">$1100</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Mark Zuckerburg</td>
-                <td>Founder of Facebook</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr><td colspan="4">Total Employee:4</td></tr>
-        </tfoot>
-    </table>
-    <ul>
-        <li>Table: table</li>
-        <li>Caption: caption</li>
-        <li>Table head: thead</li>
-        <li>Table header: th</li>
-        <li>Table body: tbody</li>
-        <li>Table footer: tfoot</li>
-        <li>Table row: tr</li>
-        <li>Table data: td</li>
-    </ul>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="form.html">Form</a>
+                    <ul class="drop">
+                        <li><a href="form.html">Form</a>
+                        </li>
+                        <li>
+                            <a href="table.html">Table</a>
+                        <ul class="drop">
+                            <li><a href="form.html">Form</a>
+                            </li>
+                            <li><a href="table.html">Table</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </li>
+                <li><a href="table.html">Table</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Html Table</h2>
+        <table>
+            <caption>Employee Table</caption>
+            <thead>
+                <th>Serial</th>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Salary</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Bill Gates</td>
+                    <td>Founder of Microsoft</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Steve Jobs</td>
+                    <td>Founder of Apple</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry Page</td>
+                    <td>Founder of Google</td>
+                    <td rowspan="2">$1100</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mark Zuckerburg</td>
+                    <td>Founder of Facebook</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Total Employee:4</td>
+                </tr>
+            </tfoot>
+        </table>
+        <ul>
+            <li>Table: table</li>
+            <li>Caption: caption</li>
+            <li>Table head: thead</li>
+            <li>Table header: th</li>
+            <li>Table body: tbody</li>
+            <li>Table footer: tfoot</li>
+            <li>Table row: tr</li>
+            <li>Table data: td</li>
+        </ul>
+    </main>
 </body>
+
 </html>
